@@ -1,0 +1,39 @@
+@import "../../style/variables";
+
+#header {
+    height: 95px;
+    width: 100%;
+    background-color: $primary-green-color;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    h1 {
+        margin-left: 65px;
+        width: 238px;
+        text-align: center;
+        height: 48px;
+    }
+
+    .blue-fill {
+        width: 50%;
+        height: 50vw;
+        position: absolute;
+        right:0;
+        background-color: $primary-blue-color;
+        transform: translate(75px) rotate(30deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header {
+        justify-content: center;
+        height: 71px;
+        h1 {
+            width: unset;
+            margin-left: unset;
+            height: 36px;
+        }
+    }
+}
