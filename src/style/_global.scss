@@ -13,7 +13,35 @@ h2 {
   font-size: 25px;
 }
 
+img {
+  display: block;
+}
+
+.App-body {
+  display: flex;
+  justify-content: space-between;
+  margin: 120px 180px;
+}
+
+@media screen and (max-width: 1600px) {
+  .App-body {
+    margin: 100px 100px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .App-body {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App-body {
+    margin: 41px 25px;
+  }
   h1 {
     font-size: 30px;
   }

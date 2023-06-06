@@ -1,0 +1,107 @@
+@import "../../style/variables";
+
+#heading {
+  flex-basis: 50%;
+  h1,h2 {
+    margin-left: 17px;
+  }
+  h1 {
+    font-size: 70px;
+    color: $primary-blue-color;
+    margin-bottom: 41px;
+  }
+  h2 {
+    font-size: 60px;
+    font-family: Lato-Regular, sans-serif;
+    font-weight: 400;
+    span {
+      font-weight: 600;
+    }
+  }
+  img {
+    width: 647px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #heading {
+    img {
+      width: 97%;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #heading {
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      font-size: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #heading {
+    h1 {
+      font-size: 37px;
+    }
+    h2 {
+      font-size: 27px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #heading {
+    flex-basis: 100%;
+    h1,h2 {
+      margin-left: 3px;
+    }
+
+    h1 {
+      font-size: 50px;
+      margin-bottom: 41px;
+    }
+    h2 {
+      font-size: 35px;
+    }
+
+    img {
+      width: 97%;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #heading {
+    flex-basis: 100%;
+    h1,h2 {
+      margin-left: 3px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 41px;
+    }
+    h2 {
+      font-size: 35px;
+    }
+
+    img {
+      width: 97%;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #heading {
+    h1 {
+      font-size: 35px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+  }
+}
