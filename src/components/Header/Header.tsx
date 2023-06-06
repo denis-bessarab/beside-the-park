@@ -16,7 +16,7 @@ function Header() : React.JSX.Element {
 	return (
 		<header id="header">
 			<h1>{(screenSize >= 768) ? "LOREM" : "LOREM IPSUM"}</h1>
-			{(screenSize >= 768) && <div className="blue-fill"></div>}
+			{(screenSize >= 1024) && <div className="blue-fill"></div>}
 		</header>
 	);
 }

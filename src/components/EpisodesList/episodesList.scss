@@ -1,12 +1,27 @@
+@import '../../style/variables';
 #episodesList {
-  background-color: red;
   flex-basis: 50%;
   width: 100%;
   height: 100vh;
+  li:nth-child(even) {
+    .name{
+      color:$secondary-green-color;
+    }
+  }
+  li:nth-child(odd) {
+    .name{
+      color:$primary-blue-color;
+    }
+  }
+
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   #episodesList {
     flex-basis: 100%;
+    margin-top: 47px;
+    li:not(li:last-child) {
+      border-bottom: $light-grey-color solid 1px;
+    }
   }
 }

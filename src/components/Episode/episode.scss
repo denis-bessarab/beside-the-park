@@ -1,0 +1,82 @@
+@import '../../style/variables';
+
+.episode-component {
+  list-style: none;
+  display: flex;
+  margin-left: calc(100vw/24 + 4.5px);
+
+  h2 {
+    font-family: Lato,sans-serif;
+    line-height: 40px;
+  }
+
+  .episode {
+    display: inline-block;
+    margin-top:11px;
+    margin-right: 34px;
+  }
+
+  .air-date {
+    font-size: 20px;
+    color:$dark-grey-color;
+    margin-left: 29px;
+    padding-bottom: 13px;
+  }
+
+  .name {
+    padding-top: 11px;
+    margin-left: 29px;
+    margin-bottom: 2px;
+  }
+
+  .name-air-date-container {
+    border-left: $light-grey-color solid 1px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .episode-component {
+    margin-left: unset;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+    .episode {
+      flex-basis: 100%;
+      margin-bottom: 13px;
+    }
+
+    h2 {
+      font-family: Lato,sans-serif;
+      font-size: 18px;
+      line-height: unset;
+    }
+
+    .name-air-date-container {
+      border-left: none
+    }
+
+    .air-date {
+      font-size: 15px;
+      color:$dark-grey-color;
+      margin-left: unset;
+      padding-bottom: 21px;
+    }
+
+    .name {
+      padding-top: unset;
+      margin-left: unset;
+      margin-bottom: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .episode-component{
+    h2 {
+      font-size: 20px;
+    }
+
+    .air-date {
+      font-size: 15px;
+    }
+  }
+}
