@@ -32,14 +32,19 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .App-body {
     flex-wrap: wrap;
+    margin: 41px 25px;
+  }
+  h1 {
+    font-size: 30px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .App-body {
+    flex-wrap: wrap;
     margin: 41px 25px;
   }
   h1 {
