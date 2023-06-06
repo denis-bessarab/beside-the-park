@@ -1,0 +1,12 @@
+#episodesList {
+  background-color: red;
+  flex-basis: 50%;
+  width: 100%;
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  #episodesList {
+    flex-basis: 100%;
+  }
+}
