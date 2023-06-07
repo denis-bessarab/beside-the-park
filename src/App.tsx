@@ -2,6 +2,7 @@ import React from 'react';
 import Header from "./components/Header/Header";
 import Heading from "./components/Heading/Heading";
 import EpisodesList from "./components/EpisodesList/EpisodesList";
+import Footer from "./components/Footer/Footer";
 function App() : React.JSX.Element {
   return (
     <div className="App">
@@ -10,6 +11,7 @@ function App() : React.JSX.Element {
         <Heading/>
         <EpisodesList/>
       </section>
+      <Footer/>
     </div>
   );
 }
