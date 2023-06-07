@@ -14,7 +14,7 @@ function EpisodesList() : React.JSX.Element {
 	},[response.data])
 
 	return (
-		<ul id="episodesList">
+		<ul className="Episodes-List">
 			{episodesList?.episodes.results.map((episode,index) => {
 				return <Episode key={index} air_date={episode.air_date} episode={episode.episode} name={episode.name} __typename={episode.__typename}/>
 			})}
