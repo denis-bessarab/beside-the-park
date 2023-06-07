@@ -3,7 +3,7 @@
 .episode-component {
   list-style: none;
   display: flex;
-  margin-left: calc(100vw/24 + 4.5px);
+  margin-left: calc(3vw + 18px);
 
   h2 {
     font-family: Lato,sans-serif;
@@ -31,6 +31,18 @@
 
   .name-air-date-container {
     border-left: $light-grey-color solid 1px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .episode-component{
+    h2 {
+      font-size: 20px;
+    }
+
+    .air-date {
+      font-size: 15px;
+    }
   }
 }
 
@@ -69,14 +81,3 @@
   }
 }
 
-@media screen and (max-width: 1600px) {
-  .episode-component{
-    h2 {
-      font-size: 20px;
-    }
-
-    .air-date {
-      font-size: 15px;
-    }
-  }
-}
