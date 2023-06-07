@@ -22,7 +22,11 @@
         position: absolute;
         right:0;
         background-color: $primary-blue-color;
-        transform: translate(75px) rotate(30deg);
+        transform: translate(67.5px) rotate(30deg);
+        -webkit-transform: translate(67.5px) rotate(30deg);
+        -moz-transform: translate(67.5px) rotate(30deg);
+        -o-transform: translate(67.5px) rotate(30deg);
+        -ms-transform: translate(67.5px) rotate(30deg);
     }
 }
 
