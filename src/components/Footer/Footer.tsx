@@ -3,7 +3,7 @@ import './footer.scss';
 
 function Footer() : React.JSX.Element {
 	return (
-		<footer className="Footer">
+		<footer className="Footer" data-testid="footer">
 			<h2>LOREM IPSUM ©2021</h2>
 		</footer>
 	)
