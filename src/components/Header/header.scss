@@ -14,6 +14,9 @@
         width: 238px;
         text-align: center;
         height: 48px;
+        span {
+            display: none;
+        }
     }
 
     .blue-fill {
@@ -30,6 +33,14 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    #header {
+        .blue-fill {
+            display: none;
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     #header {
         justify-content: center;
@@ -38,6 +49,9 @@
             width: unset;
             margin-left: unset;
             height: 36px;
+            span {
+                display: inline-block;
+            }
         }
     }
 }
