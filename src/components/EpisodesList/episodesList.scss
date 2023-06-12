@@ -2,6 +2,9 @@
 .Episodes-List {
   flex-basis: 50%;
   width: 100%;
+  list-style: none;
+  min-height: 500px;
+  position: relative;
   li:nth-child(even) {
     .name{
       color:$secondary-green-color;
@@ -12,6 +15,25 @@
       color:$primary-blue-color;
     }
   }
+  .loader {
+    position: absolute;
+    left:50%;
+    margin-top: 100px;
+    transform: translate(-50%);
+    -webkit-transform:translate(-50%);
+    -o-transform:translate(-50%);
+    -ms-transform:translate(-50%);
+    -moz-transform:translate(-50%);
+    img {
+      width: 200px;
+    }
+  }
+  .error {
+    text-align: center;
+    font-size: 24px;
+    color: $dark-grey-color;
+    margin-top: 100px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -20,6 +42,14 @@
     margin-top: 47px;
     li:not(li:last-child) {
       border-bottom: $light-grey-color solid 1px;
+    }
+    .loader {
+      img {
+        width: 150px;
+      }
+    }
+    .error {
+      font-size: 16px;
     }
   }
 }
