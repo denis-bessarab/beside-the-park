@@ -13,7 +13,7 @@ function EpisodesList() : React.JSX.Element {
 			{loading && <li className="loader"><img src={loader} alt="loader"/></li>}
 			{error && <li className="error">Oops... Something's gone wrong :(</li>}
 			{data && data.episodes.results.map((episode:EpisodeInterface,index:number) => {
-				return <Episode key={index} air_date={episode.air_date} episode={episode.episode} name={episode.name} __typename={episode.__typename}/>
+				return <Episode key={index} episode={episode}/>
 			})}
 		</ul>
 	);
