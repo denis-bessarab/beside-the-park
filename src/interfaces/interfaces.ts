@@ -14,3 +14,7 @@ export interface EpisodeInterface {
 	name: string,
 	__typename: string
 }
+
+export interface EpisodePropsInterface {
+	episode: EpisodeInterface
+}
