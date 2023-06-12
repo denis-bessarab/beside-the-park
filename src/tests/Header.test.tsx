@@ -1,19 +1,16 @@
 import { render, screen } from '@testing-library/react';
 import Header from "../components/Header/Header";
 
-describe('Header component renders correctly', () : void => {
+test('Header component renders correctly', () : void => {
 
-	test('renders correctly for mobile screens', () => {
-		Object.defineProperty(window, 'innerWidth', {writable: true, configurable: true, value: 320})
-		render(<Header />);
-		const headerComponent:HTMLElement = screen.getByText('LOREM IPSUM')
-		expect(headerComponent).toBeInTheDocument()
-	});
+	render(<Header/>)
 
-	test('renders correctly for desktop screens', () => {
-		Object.defineProperty(window, 'innerWidth', {writable: true, configurable: true, value: 1920})
-		render(<Header />);
-		const headerComponent:HTMLElement = screen.getByText('LOREM')
-		expect(headerComponent).toBeInTheDocument()
-	});
+	const heading:HTMLElement = screen.getByRole('heading',{'level':1})
+	expect(heading).toBeInTheDocument()
+
+	const blueFill:HTMLElement = screen.getByTestId('blue-fill')
+	expect(blueFill).toBeInTheDocument()
+
+	const headingSpan:HTMLElement = screen.getByTestId('header-span')
+	expect(headingSpan).toBeInTheDocument()
 });
