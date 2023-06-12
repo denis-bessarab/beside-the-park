@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/beside-the-park/static/css/main.4890393d.css",
-    "main.js": "/beside-the-park/static/js/main.6605a891.js",
+    "main.css": "/beside-the-park/static/css/main.0606b249.css",
+    "main.js": "/beside-the-park/static/js/main.6a7b409d.js",
     "static/js/787.36fb7d40.chunk.js": "/beside-the-park/static/js/787.36fb7d40.chunk.js",
     "static/media/rick-and-morty.png": "/beside-the-park/static/media/rick-and-morty.bad8a469d099ea7d8875.png",
     "static/media/Lato-BoldItalic.ttf": "/beside-the-park/static/media/Lato-BoldItalic.4113fd37d3dbdde71570.ttf",
@@ -12,14 +12,15 @@
     "static/media/Lato-BlackItalic.ttf": "/beside-the-park/static/media/Lato-BlackItalic.8b75b50df5eea75e1c44.ttf",
     "static/media/Lato-Thin.ttf": "/beside-the-park/static/media/Lato-Thin.01923cbbba31d9cb7f29.ttf",
     "static/media/Lato-Black.ttf": "/beside-the-park/static/media/Lato-Black.0b51cf32bbc2d8b8d840.ttf",
+    "static/media/loader.gif": "/beside-the-park/static/media/loader.007c8bfe002c8ef39374.gif",
     "static/media/Lato-ThinItalic.ttf": "/beside-the-park/static/media/Lato-ThinItalic.c47d267d1b0232d5fe9b.ttf",
     "index.html": "/beside-the-park/index.html",
-    "main.4890393d.css.map": "/beside-the-park/static/css/main.4890393d.css.map",
-    "main.6605a891.js.map": "/beside-the-park/static/js/main.6605a891.js.map",
+    "main.0606b249.css.map": "/beside-the-park/static/css/main.0606b249.css.map",
+    "main.6a7b409d.js.map": "/beside-the-park/static/js/main.6a7b409d.js.map",
     "787.36fb7d40.chunk.js.map": "/beside-the-park/static/js/787.36fb7d40.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4890393d.css",
-    "static/js/main.6605a891.js"
+    "static/css/main.0606b249.css",
+    "static/js/main.6a7b409d.js"
   ]
 }
